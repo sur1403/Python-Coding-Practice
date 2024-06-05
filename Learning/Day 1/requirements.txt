@@ -1,0 +1,7 @@
+<<<<<<< HEAD
+PyQt5==5.15.10
+pillow==8.3.2
+matplotlib==3.4.3
+=======
+
+>>>>>>> f7e93e0 (Create requirements.txt)
