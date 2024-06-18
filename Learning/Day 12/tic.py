@@ -1,6 +1,13 @@
+# Draw a board
+# Input player Name
+# Put sign to each player
+#  If they dont input between (1-9), direct them to previous state
+#  Put sign to exact spot
+# Print board after each input
+# calculate and display result
+
 instructions = """"
 This will be our tic tac board
-
 
 1 | 2 | 3
 ---------
