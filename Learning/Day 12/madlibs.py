@@ -15,13 +15,9 @@ def madlibs(story, words):
     for key, value in words.items():
         if isinstance(value, list):
             replacement = random.choice(value)
-            story = story.replace(f"{key}.".lower(), replacement, 1)
-            story = story.replace(f"{key}".lower(), replacement)
         else:
-            story = story.replace(f"{key}".lower(), value)
+            replacement = value
+        story = story.replace(f"[{key}]".lower(), replacement)
     return story
-filled_story = madlibs(story_with_blanks,Collected_Words)
-print(filled_story)
 
-
-
+print(madlibs(story_with_blanks, Collected_Words))
