@@ -21,3 +21,11 @@ def madlibs(story, words):
     return story
 
 print(madlibs(story_with_blanks, Collected_Words))
+
+# adj = input("Adjective: ")
+# verb1 = input("verb1")
+
+# madlib = f"Once upon a time, there was a(n) {adj} {adj} who loved to {verb1}. Every day, the [noun] would go to the {verb1} to {adj} with friends. One day, they found a {adj} {adj} and had the best {verb1} ever!"
+
+# print(madlib)
+
