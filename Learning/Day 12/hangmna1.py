@@ -14,7 +14,8 @@ def hangman():
     alphabet = set(string.ascii_uppercase)
     used_letters = set()  # Set of letters guessed by the user
 
-    while len(word_letters) > 0:
+    lives = 6
+    while len(word_letters) > 0 and lives > 0:
         # Show the user which letters have been guessed and the current state of the word
         print("Letters used: ", ' '.join(used_letters))
         word_list = [letter if letter in used_letters else '-' for letter in word]
@@ -28,6 +29,9 @@ def hangman():
 
             if user_letter in word_letters:
                 word_letters.remove(user_letter)  # Remove the guessed letter from the word letters set
+            else: 
+                lives -= 1
+                print("Letter is not in word")
 
         elif user_letter in used_letters:
             print("You have already guessed that letter. Please try again.")
